@@ -1,4 +1,4 @@
-package com.gsq.example;
+package com.gsq.pattern;
 
 /**
  * Hello world!
