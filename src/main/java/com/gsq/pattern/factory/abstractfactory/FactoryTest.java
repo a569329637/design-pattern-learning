@@ -2,7 +2,7 @@ package com.gsq.pattern.factory.abstractfactory;
 
 /**
  * 参考 http://blog.csdn.net/zxt0601/article/details/52798423
- * 抽象工厂模式：
+ * 抽象工厂模式：通过工厂接口产生不同的工厂，一种工厂类生产不同产品
  * cola 接口、hamburger 接口、factory 接口
  * factory 接口可以生产 cola 和 hamburger
  * 所以 KfcFactory 和 MacDonaldFactory 可以生产自己的 cola 和 hamburger

@@ -2,7 +2,7 @@ package com.gsq.pattern.factory.factorymethod;
 
 /**
  * 参考 http://www.cnblogs.com/toutou/p/4899388.html
- * 工厂方法模式：不同的工厂来生产不同的产品
+ * 工厂方法模式：通过工厂接口产生不同的工厂，一种工厂类生产一种产品
  *
  * 缺点：
  * 1. 添加新产品时需要添加新的工厂类
