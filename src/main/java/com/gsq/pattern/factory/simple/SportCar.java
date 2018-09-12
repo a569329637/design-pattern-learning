@@ -1,9 +1,9 @@
 package com.gsq.pattern.factory.simple;
 
 /**
- * Created by guishangquan on 2017/8/23.
+ * 简单工厂模式
  */
-public class SportCar implements Car {
+class SportCar implements Car {
 
     public void getCar() {
         System.out.println("获取了一辆 SportCar。");

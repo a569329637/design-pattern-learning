@@ -1,7 +1,7 @@
 package com.gsq.pattern.factory.abstractfactory;
 
 /**
- * Created by guishangquan on 2017/8/23.
+ * 抽象工厂模式
  */
 public interface Factory {
 

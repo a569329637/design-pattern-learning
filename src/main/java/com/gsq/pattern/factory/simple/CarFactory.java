@@ -1,7 +1,7 @@
 package com.gsq.pattern.factory.simple;
 
 /**
- * Created by guishangquan on 2017/8/23.
+ * 简单工厂模式
  */
 public class CarFactory {
 
@@ -10,7 +10,7 @@ public class CarFactory {
         JeepCar
     }
 
-    public Car getCar(CarType type) {
+    public static Car getCar(CarType type) {
         switch (type) {
             case SportCar:
                 return new SportCar();

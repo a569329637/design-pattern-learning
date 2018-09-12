@@ -1,7 +1,7 @@
 package com.gsq.pattern.factory.factorymethod;
 
 /**
- * Created by guishangquan on 2017/8/23.
+ * 工厂方法模式
  */
 public class SportCarFacotry implements Factory {
 

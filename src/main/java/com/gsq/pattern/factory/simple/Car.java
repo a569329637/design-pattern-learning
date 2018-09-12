@@ -1,9 +1,8 @@
 package com.gsq.pattern.factory.simple;
 
 /**
- * Created by guishangquan on 2017/8/23.
+ * 简单工厂模式
  */
 public interface Car {
-
     void getCar();
 }
