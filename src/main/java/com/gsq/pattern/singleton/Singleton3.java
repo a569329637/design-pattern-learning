@@ -1,24 +1,25 @@
 package com.gsq.pattern.singleton;
 
 /**
- * Created by guishangquan on 2017/8/23.
- * 单列模式：内部类实现，推荐用
+ * 单列模式：饿汉式，线程安全，静态代码块，可用
  */
 public class Singleton3 {
+    private static Singleton3 singleton3;
+
+    static {
+        singleton3 = new Singleton3();
+    }
 
     private Singleton3() {
 
     }
 
-    private static class SingletonHolder {
-        private static Singleton3 singleton3 = new Singleton3();
-    }
-
-    public static Singleton3 getInstance() {
-        return SingletonHolder.singleton3;
+    public static Singleton3 getSingleton() {
+        return singleton3;
     }
 
     public static void main(String[] args) {
-        Singleton3 instance = Singleton3.getInstance();
+        System.out.println("Singleton3.getSingleton() = " + Singleton3.getSingleton());
+        System.out.println("Singleton3.getSingleton() = " + Singleton3.getSingleton());
     }
 }

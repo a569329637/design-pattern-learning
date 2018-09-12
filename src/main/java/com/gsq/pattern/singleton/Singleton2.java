@@ -1,28 +1,21 @@
 package com.gsq.pattern.singleton;
 
 /**
- * Created by guishangquan on 2017/8/23.
- * 单列模式：双重校验锁，线程安全，效率较高，推荐用
+ * 单列模式：饿汉式，线程安全，静态常量，可用
  */
 public class Singleton2 {
-    private static Singleton2 singleton2;
+    private static Singleton2 singleton2 = new Singleton2();
 
     private Singleton2() {
-        singleton2 = null;
+
     }
 
-    public static Singleton2 getInstance() {
-        if (singleton2 == null) {
-            synchronized (Singleton2.class) {
-                if (singleton2 == null) {
-                    singleton2 = new Singleton2();
-                }
-            }
-        }
+    public static Singleton2 getSingleton() {
         return singleton2;
     }
 
     public static void main(String[] args) {
-        Singleton2 instance = Singleton2.getInstance();
+        System.out.println("Singleton2.getSingleton() = " + Singleton2.getSingleton());
+        System.out.println("Singleton2.getSingleton() = " + Singleton2.getSingleton());
     }
 }
