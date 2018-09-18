@@ -1,7 +1,7 @@
 package com.gsq.pattern.adapter;
 
 /**
- * Created by guishangquan on 2017/8/23.
+ * 适配器模式
  */
 public interface V5Power {
 
